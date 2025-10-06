@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .card
+        {
+            width : 500px;
+            margin : auto;
+            background : white;
+            border-radius : 16px;
+            box-shadow : 0 4px 8px 0 rgba(0,0,0,0.2); 
+            border-radius : 16px;
+            display : flex;
+            background-image: url("https://png.pngtree.com/thumb_back/fh260/background/20241015/pngtree-abstract-watercolor-background-with-pastel-colors-like-light-blue-and-pink-image_16394760.jpg");
+            margin-top : 10vw;
+            padding : 5px;
+        }
+        img
+        {
+            width : 150px;
+            height : 150px;
+            object-fit: cover; /*To prevent distortion*/
+            border-radius : 50%;
+        }
+        h2{
+            font-size: 1.5rem; 
+            font-weight: bold;
+        }
+        .info
+        {
+            padding : 10px;
+        }
+        button{
+            background-color : blue;
+            color : white;
+            padding : 2px;
+            border-radius : 7px;
+            margin : 5px;
+            
+        }
+        .buttons
+        {
+            display : flex;
+            gap : 10px;
+            margin-top: 10px;
+            justify-content : flex-start;
+            /* align-items : flex-end; */
+        }
+        .content 
+        {
+            display : block;
+        }
+        @media (max-width : 640px)
+        {
+            .card{
+            display : flex;
+            flex-direction: column ;
+            width : 70vw;
+            margin : auto;
+            background : white;
+            border-radius : 16px;
+            box-shadow : 0 4px 8px 0 rgba(0,0,0,0.2); 
+            border-radius : 16px;
+            background-image : url("https://png.pngtree.com/thumb_back/fh260/background/20241015/pngtree-abstract-watercolor-background-with-pastel-colors-like-light-blue-and-pink-image_16394760.jpg");
+            
+
+            }
+            img 
+            {
+                width : 30vw;
+                height : 30vw;
+            }
+            button 
+            {
+                width : 90%;
+                display: block;
+                margin: auto
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <div class="profile">
+        <img src ="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTMqcCXSPd1GayrYoUaN2o4vaBaiZCOa7v7Q&s" alt="Aryan">
+        <h2>Harsh Yadav</h2>
+        </div>
+        <div class="content">
+        <div class="info">
+            <p>Hi I'm Harsh, passionate about Startups and Projects, particularly competitive programming. Excited to learn a lot at scaler . My hobbies include watching true crime documentaries, badminton, programming and chess</p>
+        </div>
+        <div class ="buttons">
+        <button>Contact</button>
+        <button>Portfolio</button>
+        </div>
+        </div>
+    </div>
+</body>
+</html>
